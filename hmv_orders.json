@@ -404,19 +404,6 @@
     "total": 34.99
   },
   {
-    "order_id": "12628306",
-    "order_date": "2026-01-18",
-    "items": [
-      {
-        "title": "Spaceballs Limited Edition",
-        "price": 24.99,
-        "release_date": "2026-03-16",
-        "status": "Awaiting dispatch"
-      }
-    ],
-    "total": 24.99
-  },
-  {
     "order_id": "12628313",
     "order_date": "2026-01-18",
     "items": [
@@ -613,5 +600,18 @@
       }
     ],
     "total": 34.99
+  },
+  {
+    "order_id": "12862313",
+    "order_date": "2026-03-18",
+    "items": [
+      {
+        "title": "Hard Boiled Limited Edition",
+        "price": 29.99,
+        "release_date": "2026-03-30",
+        "status": "Pre-order"
+      }
+    ],
+    "total": 29.99
   }
 ]
