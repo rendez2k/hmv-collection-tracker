@@ -133,7 +133,7 @@
       {
         "title": "One Battle After Another (hmv Exclusive) Limited Edition 4K Ultra HD SteelBook",
         "price": 34.99,
-        "release_date": null,
+        "release_date": "2026-06-01",
         "status": "Pre-order"
       }
     ],
@@ -429,13 +429,13 @@
       {
         "title": "Speed Racer Limited Edition 4K Ultra HD SteelBook",
         "price": 34.99,
-        "release_date": null,
+        "release_date": "2026-05-18",
         "status": "Pre-order"
       },
       {
         "title": "Speed Racer Collectors Edition with SteelBook",
         "price": 49.99,
-        "release_date": null,
+        "release_date": "2026-05-18",
         "status": "Pre-order"
       }
     ],
@@ -609,7 +609,7 @@
         "title": "Hard Boiled Limited Edition",
         "price": 29.99,
         "release_date": "2026-03-30",
-        "status": "Pre-order"
+        "status": "Delivered"
       }
     ],
     "total": 29.99
