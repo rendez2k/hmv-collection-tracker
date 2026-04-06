@@ -556,7 +556,7 @@
       {
         "title": "Fallout: Season Two Limited Edition 4K Ultra HD SteelBook",
         "price": 49.99,
-        "release_date": null,
+        "release_date": "2026-05-25",
         "status": "Pre-order"
       }
     ],
@@ -569,7 +569,7 @@
       {
         "title": "Cold Storage (hmv Exclusive)",
         "price": 24.99,
-        "release_date": null,
+        "release_date": "2026-05-11",
         "status": "Pre-order"
       }
     ],
@@ -613,5 +613,31 @@
       }
     ],
     "total": 29.99
+  },
+  {
+    "order_id": "12933286",
+    "order_date": "2026-04-03",
+    "items": [
+      {
+        "title": "Fight Club Limited Edition 4K Ultra HD SteelBook",
+        "price": 34.99,
+        "release_date": "2026-05-18",
+        "status": "Pre-order"
+      }
+    ],
+    "total": 34.99
+  },
+  {
+    "order_id": "12933303",
+    "order_date": "2026-04-03",
+    "items": [
+      {
+        "title": "Highlander",
+        "price": 39.99,
+        "release_date": "2026-06-29",
+        "status": "Pre-order"
+      }
+    ],
+    "total": 39.99
   }
 ]
