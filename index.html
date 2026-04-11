@@ -439,6 +439,12 @@ tbody tr.row-selected:hover{background:rgba(232,168,73,0.1)}
     <!-- LEFT COLUMN -->
     <div class="left-col">
 
+      <!-- DELETION HINT BANNER -->
+      <div id="deletionHint" style="display:none;align-items:center;justify-content:space-between;gap:10px;padding:10px 14px;margin-bottom:12px;background:rgba(248,113,113,0.08);border:1px solid rgba(248,113,113,0.2);border-radius:8px;font-size:0.78rem;color:var(--text-secondary)">
+        <span><span id="deletionHintCount">0</span> item(s) hidden by manual deletion. Deletions persist in this browser. <span style="color:var(--text-muted)">To restore all hidden items:</span></span>
+        <button onclick="restoreAllDeleted()" style="background:rgba(160,160,184,0.12);border:1px solid rgba(160,160,184,0.2);color:var(--text-secondary);border-radius:6px;padding:4px 12px;cursor:pointer;font-size:0.78rem;white-space:nowrap">Restore all</button>
+      </div>
+
       <!-- UPCOMING RELEASES TABLE -->
       <div class="section-card" style="margin-bottom:20px">
         <div class="section-header">
@@ -647,12 +653,30 @@ const orders = [
   {order_id:"12933303",order_date:"2026-04-03",items:[{title:"Highlander",price:39.99,release_date:"2026-06-29",status:"Pre-order"}],total:39.99}
 ];
 
+// ─── MANUAL DELETION PERSISTENCE ───
+// Items deleted via the dashboard are stored in localStorage so they survive
+// page refreshes and weekly rebuilds. The cron never re-adds a title that
+// appears in the server-side manually_deleted.json blocklist.
+function getDeletedTitles() {
+  try { return JSON.parse(localStorage.getItem('hmv_deleted_titles') || '[]'); }
+  catch(e) { return []; }
+}
+function saveDeletedTitle(title) {
+  const list = getDeletedTitles();
+  if (!list.includes(title)) { list.push(title); localStorage.setItem('hmv_deleted_titles', JSON.stringify(list)); }
+}
+function restoreAllDeleted() {
+  localStorage.removeItem('hmv_deleted_titles');
+  location.reload();
+}
+
 // ─── UPCOMING RELEASES TABLE ───
 (function(){
+  const deletedTitles = getDeletedTitles();
   const pending = [];
   orders.forEach(o => {
     o.items.forEach(item => {
-      if(item.status === 'Pre-order' || item.status === 'Awaiting dispatch') {
+      if((item.status === 'Pre-order' || item.status === 'Awaiting dispatch') && !deletedTitles.includes(item.title)) {
         pending.push(item);
       }
     });
@@ -670,6 +694,20 @@ const orders = [
   const today = '2026-04-06';
   const tbody = document.getElementById('upcomingBody');
   window._pendingItems = pending;
+
+  // If any items were filtered out by localStorage, update KPIs and show banner
+  if (deletedTitles.length > 0) {
+    const kpiCards = document.querySelectorAll('.kpi-card');
+    if (kpiCards[2]) kpiCards[2].querySelector('.kpi-value').textContent = pending.length;
+    if (kpiCards[3]) {
+      const pv = pending.reduce((s,i) => s + i.price, 0);
+      kpiCards[3].querySelector('.kpi-value').textContent = '\u00a3' + pv.toFixed(2);
+    }
+    const hint = document.getElementById('deletionHint');
+    if (hint) hint.style.display = 'flex';
+    const hintCount = document.getElementById('deletionHintCount');
+    if (hintCount) hintCount.textContent = deletedTitles.length;
+  }
   pending.forEach((item, idx) => {
     const tr = document.createElement('tr');
     tr.dataset.idx = idx;
@@ -1071,7 +1109,11 @@ function closeDeleteModal() {
 document.getElementById('deleteConfirmBtn').addEventListener('click', () => {
   if (_deleteIdx === null) return;
   const idx = _deleteIdx;
+  const item = window._pendingItems[idx];
   closeDeleteModal();
+
+  // Persist deletion to localStorage so it survives page reloads and weekly rebuilds
+  saveDeletedTitle(item.title);
 
   // Remove the row with animation
   const row = document.querySelector(`tr[data-idx="${idx}"]`);
@@ -1083,6 +1125,13 @@ document.getElementById('deleteConfirmBtn').addEventListener('click', () => {
       row.remove();
       // Update KPI cards
       updateKPIsAfterDelete();
+      // Show restore hint if this is the first deletion in this session
+      const deleted = getDeletedTitles();
+      if (deleted.length === 1) {
+        const hint = document.getElementById('deletionHint');
+        if (hint) hint.style.display = 'flex';
+      }
+      document.getElementById('deletionHintCount').textContent = getDeletedTitles().length;
     }, 300);
   }
 
