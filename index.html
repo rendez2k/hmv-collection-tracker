@@ -687,7 +687,8 @@ function restoreAllDeleted() {
       }
     });
   });
-  // Sort: dated items first by date ascending, then TBC items alphabetically
+  const today = '2026-04-20';
+  // Sort: future/today dates first ascending, then past dates ascending, then TBC alphabetically
   pending.sort((a,b) => {
     const da = a.release_date, db = b.release_date;
     const cat = (d) => !d ? 2 : d >= today ? 0 : 1;
@@ -696,8 +697,6 @@ function restoreAllDeleted() {
     if (da && db) return da < db ? -1 : da > db ? 1 : a.title.localeCompare(b.title);
     return a.title.localeCompare(b.title);
   });
-
-  const today = '2026-04-20';
   const tbody = document.getElementById('upcomingBody');
   window._pendingItems = pending;
 
