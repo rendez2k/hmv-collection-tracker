@@ -185,19 +185,6 @@
     "total": 49.98
   },
   {
-    "order_id": "12066573",
-    "order_date": "2025-11-03",
-    "items": [
-      {
-        "title": "City On Fire Limited Edition",
-        "price": 24.99,
-        "release_date": "2025-12-01",
-        "status": "Delivered"
-      }
-    ],
-    "total": 24.99
-  },
-  {
     "order_id": "12087281",
     "order_date": "2025-11-07",
     "items": [
@@ -269,25 +256,6 @@
     "total": 29.99
   },
   {
-    "order_id": "12116917",
-    "order_date": "2025-11-12",
-    "items": [
-      {
-        "title": "Caught Stealing",
-        "price": 24.99,
-        "release_date": "2025-12-08",
-        "status": "Delivered"
-      },
-      {
-        "title": "The Assassination Bureau Limited Edition",
-        "price": 17.99,
-        "release_date": "2026-01-05",
-        "status": "Delivered"
-      }
-    ],
-    "total": 42.98
-  },
-  {
     "order_id": "12135751",
     "order_date": "2025-11-16",
     "items": [
@@ -318,19 +286,6 @@
       }
     ],
     "total": 34.99
-  },
-  {
-    "order_id": "12161336",
-    "order_date": "2025-11-20",
-    "items": [
-      {
-        "title": "The Sweeney: Series Three",
-        "price": 49.99,
-        "release_date": "2025-12-01",
-        "status": "Delivered"
-      }
-    ],
-    "total": 49.99
   },
   {
     "order_id": "12295627",
@@ -391,19 +346,6 @@
     "total": 64.98
   },
   {
-    "order_id": "12599219",
-    "order_date": "2026-01-12",
-    "items": [
-      {
-        "title": "Sisu: Road to Revenge Limited Edition 4K Ultra HD SteelBook",
-        "price": 34.99,
-        "release_date": "2026-02-16",
-        "status": "Delivered"
-      }
-    ],
-    "total": 34.99
-  },
-  {
     "order_id": "12628313",
     "order_date": "2026-01-18",
     "items": [
@@ -435,7 +377,7 @@
       {
         "title": "Speed Racer Collectors Edition with SteelBook",
         "price": 49.99,
-        "release_date": null,
+        "release_date": "2026-05-18",
         "status": "Pre-order"
       }
     ],
@@ -462,19 +404,19 @@
         "title": "Innerspace Limited Edition",
         "price": 29.99,
         "release_date": "2027-04-27",
-        "status": "Pre-order"
+        "status": "Delivered"
       },
       {
         "title": "The Killer Limited Edition",
         "price": 29.99,
         "release_date": "2026-04-20",
-        "status": "Pre-order"
+        "status": "Delivered"
       },
       {
         "title": "Soldier Limited Edition",
         "price": 24.99,
         "release_date": "2026-04-27",
-        "status": "Pre-order"
+        "status": "Delivered"
       }
     ],
     "total": 84.97
@@ -543,7 +485,7 @@
       {
         "title": "Doctor Who: The Movie Limited Edition 4K Ultra HD & Blu-Ray SteelBook",
         "price": 34.99,
-        "release_date": null,
+        "release_date": "2026-05-25",
         "status": "Pre-order"
       }
     ],
@@ -678,5 +620,31 @@
       }
     ],
     "total": 34.99
+  },
+  {
+    "order_id": "12986787",
+    "order_date": "2026-04-17",
+    "items": [
+      {
+        "title": "The Dark Crystal Limited Edition 4K Ultra HD Collectors Edition with SteelBook",
+        "price": 69.99,
+        "release_date": "2026-06-22",
+        "status": "Pre-order"
+      }
+    ],
+    "total": 69.99
+  },
+  {
+    "order_id": "13003353",
+    "order_date": "2026-04-23",
+    "items": [
+      {
+        "title": "Good Luck, Have Fun, Don't Die",
+        "price": 26.99,
+        "release_date": "2026-06-01",
+        "status": "Pre-order"
+      }
+    ],
+    "total": 26.99
   }
 ]
