@@ -371,13 +371,13 @@
       {
         "title": "Speed Racer Limited Edition 4K Ultra HD SteelBook",
         "price": 34.99,
-        "release_date": "2026-05-18",
+        "release_date": "2026-05-15",
         "status": "Pre-order"
       },
       {
         "title": "Speed Racer Collectors Edition with SteelBook",
         "price": 49.99,
-        "release_date": "2026-05-18",
+        "release_date": "2026-05-15",
         "status": "Pre-order"
       }
     ],
@@ -646,5 +646,43 @@
       }
     ],
     "total": 26.99
+  },
+  {
+    "order_id": "13008264",
+    "order_date": "2026-04-24",
+    "items": [
+      {
+        "title": "Falling Down Limited Edition",
+        "price": 24.99,
+        "release_date": "2026-07-20",
+        "status": "Pre-order"
+      },
+      {
+        "title": "Soylent Green Limited Edition",
+        "price": 24.99,
+        "release_date": "2026-07-27",
+        "status": "Pre-order"
+      },
+      {
+        "title": "To Live and Die in L.A. Limited Edition",
+        "price": 24.99,
+        "release_date": "2026-07-06",
+        "status": "Pre-order"
+      }
+    ],
+    "total": 74.97
+  },
+  {
+    "order_id": "13005582",
+    "order_date": "2026-04-23",
+    "items": [
+      {
+        "title": "Stranger Things: The Complete Series Deluxe Edition 4K Ultra HD",
+        "price": 199.99,
+        "release_date": "2026-07-27",
+        "status": "Pre-order"
+      }
+    ],
+    "total": 199.99
   }
 ]
