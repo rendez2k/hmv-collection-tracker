@@ -378,17 +378,17 @@ tbody tr.row-selected:hover{background:rgba(232,168,73,0.1)}
       <div class="header-meta">
         <div class="header-stat">
           <div class="label">Orders</div>
-          <div class="value">45</div>
+          <div class="value">46</div>
         </div>
         <div class="header-stat">
           <div class="label">Items</div>
-          <div class="value">64</div>
+          <div class="value">65</div>
         </div>
         <div class="header-stat">
           <div class="label">Total Spent</div>
-          <div class="value">£2,379.36</div>
+          <div class="value">£2,409.35</div>
         </div>
-        <div class="header-updated">Last updated: 11 May 2026</div>
+        <div class="header-updated">Last updated: 25 May 2026</div>
       </div>
     </div>
   </div>
@@ -404,15 +404,15 @@ tbody tr.row-selected:hover{background:rgba(232,168,73,0.1)}
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
       </div>
       <div class="kpi-label">Total Spent</div>
-      <div class="kpi-value">£2,379.36</div>
-      <div class="kpi-sub">across 45 orders</div>
+      <div class="kpi-value">£2,409.35</div>
+      <div class="kpi-sub">across 46 orders</div>
     </div>
     <div class="kpi-card">
       <div class="kpi-icon purple">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
       </div>
       <div class="kpi-label">Total Items</div>
-      <div class="kpi-value">64</div>
+      <div class="kpi-value">65</div>
       <div class="kpi-sub">discs &amp; box sets</div>
     </div>
     <div class="kpi-card">
@@ -420,7 +420,7 @@ tbody tr.row-selected:hover{background:rgba(232,168,73,0.1)}
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
       </div>
       <div class="kpi-label">Awaiting Delivery</div>
-      <div class="kpi-value">28</div>
+      <div class="kpi-value">27</div>
       <div class="kpi-sub">pre-orders &amp; dispatching</div>
     </div>
     <div class="kpi-card">
@@ -428,7 +428,7 @@ tbody tr.row-selected:hover{background:rgba(232,168,73,0.1)}
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
       </div>
       <div class="kpi-label">Pre-order Value</div>
-      <div class="kpi-value">£1,194.72</div>
+      <div class="kpi-value">£1,139.73</div>
       <div class="kpi-sub">committed but undelivered</div>
     </div>
   </div>
@@ -616,6 +616,7 @@ const itemUrls = {
   'To Live and Die in L.A. Limited Edition':'https://www.hmv.com/search?q=To+Live+and+Die+in+LA+Limited+Edition',
   'Stranger Things: The Complete Series Deluxe Edition 4K Ultra HD':'https://www.hmv.com/search?q=Stranger+Things+Complete+Series+Deluxe+Edition+4K',
   'The Da Vinci Code Limited Edition 4K Ultra HD SteelBook':'https://www.hmv.com/search?q=Da+Vinci+Code+Limited+Edition+4K+SteelBook',
+  'Monty Python\'s Fliegender Zirkus Limited Edition Blu-ray SteelBook':'https://www.hmv.com/search?q=Monty+Python+Fliegender+Zirkus+Limited+Edition+Blu-ray+SteelBook',
 };
 
 // ─── ORDER DATA ───
@@ -649,8 +650,8 @@ const orders = [
   {order_id:"12723367",order_date:"2026-02-10",items:[{title:"Eraser Collectors Edition with SteelBook",price:49.99,release_date:"2026-06-29",status:"Pre-order"},{title:"Eraser Limited Edition 4K Ultra HD SteelBook",price:34.99,release_date:"2026-06-29",status:"Pre-order"}],total:84.98},
   {order_id:"12749387",order_date:"2026-02-18",items:[{title:"Fallout: Season Two",price:39.99,release_date:null,status:"Pre-order"},{title:"Leaving Las Vegas 30th Anniversary",price:24.99,release_date:"2026-05-18",status:"Pre-order"}],total:64.98},
   {order_id:"12752335",order_date:"2026-02-19",items:[{title:"Double Impact",price:29.99,release_date:"2026-02-23",status:"Delivered"},{title:"One Battle After Another",price:24.99,release_date:null,status:"Pre-order"}],total:54.98},
-  {order_id:"12758704",order_date:"2026-02-20",items:[{title:"Doctor Who: The Movie Limited Edition 4K Ultra HD & Blu-Ray SteelBook",price:34.99,release_date:"2026-05-25",status:"Pre-order"}],total:34.99},
-  {order_id:"12800210",order_date:"2026-03-02",items:[{title:"Fallout: Season Two Limited Edition 4K Ultra HD SteelBook",price:49.99,release_date:"2026-05-25",status:"Pre-order"}],total:49.99},
+  {order_id:"12758704",order_date:"2026-02-20",items:[{title:"Doctor Who: The Movie Limited Edition 4K Ultra HD & Blu-Ray SteelBook",price:34.99,release_date:"2026-05-25",status:"Delivered"}],total:34.99},
+  {order_id:"12800210",order_date:"2026-03-02",items:[{title:"Fallout: Season Two Limited Edition 4K Ultra HD SteelBook",price:49.99,release_date:"2026-05-25",status:"Delivered"}],total:49.99},
   {order_id:"12802996",order_date:"2026-03-02",items:[{title:"Cold Storage (hmv Exclusive)",price:24.99,release_date:"2026-05-11",status:"Delivered"}],total:24.99},
   {order_id:"12804649",order_date:"2026-03-03",items:[{title:"Space: 1999 - Breakaway Limited Edition 4K Ultra HD SteelBook",price:29.99,release_date:"2026-03-03",status:"Delivered"}],total:29.99},
   {order_id:"12854457",order_date:"2026-03-16",items:[{title:"Eyes Wide Shut Limited Edition 4K Ultra HD SteelBook",price:34.99,release_date:null,status:"Pre-order"}],total:34.99},
@@ -664,7 +665,8 @@ const orders = [
   {order_id:"13003353",order_date:"2026-04-23",items:[{title:"Good Luck, Have Fun, Don't Die",price:26.99,release_date:"2026-06-01",status:"Pre-order"}],total:26.99},
   {order_id:"13008264",order_date:"2026-04-24",items:[{title:"Falling Down Limited Edition",price:24.99,release_date:"2026-07-20",status:"Pre-order"},{title:"Soylent Green Limited Edition",price:24.99,release_date:"2026-07-27",status:"Pre-order"},{title:"To Live and Die in L.A. Limited Edition",price:24.99,release_date:"2026-07-06",status:"Pre-order"}],total:74.97},
   {order_id:"13005582",order_date:"2026-04-23",items:[{title:"Stranger Things: The Complete Series Deluxe Edition 4K Ultra HD",price:199.99,release_date:"2026-07-27",status:"Pre-order"}],total:199.99},
-  {order_id:"13019436",order_date:"2026-04-27",items:[{title:"The Da Vinci Code Limited Edition 4K Ultra HD SteelBook",price:29.99,release_date:"2026-05-18",status:"Pre-order"}],total:29.99}
+  {order_id:"13019436",order_date:"2026-04-27",items:[{title:"The Da Vinci Code Limited Edition 4K Ultra HD SteelBook",price:29.99,release_date:"2026-05-18",status:"Pre-order"}],total:29.99},
+  {order_id:"13101919",order_date:"2026-05-20",items:[{title:"Monty Python's Fliegender Zirkus Limited Edition Blu-ray SteelBook",price:29.99,release_date:"2026-06-05",status:"Pre-order"}],total:29.99}
 ];
 
 // ─── MANUAL DELETION PERSISTENCE ───
@@ -695,7 +697,7 @@ function restoreAllDeleted() {
       }
     });
   });
-  const today = '2026-05-11';
+  const today = '2026-05-25';
   // Sort: future/today dates first ascending, then past dates ascending, then TBC alphabetically
   pending.sort((a,b) => {
     const da = a.release_date, db = b.release_date;
@@ -733,7 +735,7 @@ function restoreAllDeleted() {
     } else if(item.release_date === today){
       badgeClass = 'badge-green';
       dateLabel = formatDate(item.release_date) + ' — Today!';
-    } else if(item.release_date <= '2026-05-18'){
+    } else if(item.release_date <= '2026-06-01'){
       badgeClass = 'badge-green';
       dateLabel = formatDate(item.release_date);
     } else {
@@ -831,9 +833,10 @@ function formatDate(d){
     '2026-01': 367.90,
     '2026-02': 239.93,
     '2026-03': 169.95,
-    '2026-04': 566.88
+    '2026-04': 566.88,
+    '2026-05': 29.99
   };
-  const labels = ['Sep 25','Oct 25','Nov 25','Dec 25','Jan 26','Feb 26','Mar 26','Apr 26'];
+  const labels = ['Sep 25','Oct 25','Nov 25','Dec 25','Jan 26','Feb 26','Mar 26','Apr 26','May 26'];
   const data = Object.values(monthlyData);
 
   new Chart(document.getElementById('monthlyChart'),{
@@ -891,7 +894,7 @@ function formatDate(d){
 // ─── CATEGORY DONUT CHART ───
 (function(){
   const catLabels = ['4K SteelBook','Collectors Edition','Limited Edition','Box Set','Other'];
-  const catData = [897.75,246.95,612.81,319.96,301.89];
+  const catData = [897.75,246.95,642.80,319.96,301.89];
   const catColors = ['#e8a849','#6366f1','#a78bfa','#34d399','#64748b'];
 
   new Chart(document.getElementById('categoryChart'),{
