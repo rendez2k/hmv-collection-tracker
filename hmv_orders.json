@@ -365,25 +365,6 @@
     "total": 97.98
   },
   {
-    "order_id": "12648559",
-    "order_date": "2026-01-23",
-    "items": [
-      {
-        "title": "Speed Racer Limited Edition 4K Ultra HD SteelBook",
-        "price": 34.99,
-        "release_date": "2026-06-15",
-        "status": "Pre-order"
-      },
-      {
-        "title": "Speed Racer Collectors Edition with SteelBook",
-        "price": 49.99,
-        "release_date": "2026-06-15",
-        "status": "Pre-order"
-      }
-    ],
-    "total": 84.98
-  },
-  {
     "order_id": "12666777",
     "order_date": "2026-01-27",
     "items": [
@@ -603,7 +584,7 @@
         "title": "Escape from L.A.",
         "price": 29.99,
         "release_date": "2026-06-01",
-        "status": "Pre-order"
+        "status": "Delivered"
       }
     ],
     "total": 29.99
@@ -642,7 +623,7 @@
         "title": "Good Luck, Have Fun, Don't Die",
         "price": 26.99,
         "release_date": "2026-06-01",
-        "status": "Pre-order"
+        "status": "Delivered"
       }
     ],
     "total": 26.99
@@ -706,6 +687,32 @@
         "title": "Monty Python's Fliegender Zirkus Limited Edition Blu-ray SteelBook",
         "price": 29.99,
         "release_date": "2026-06-05",
+        "status": "Pre-order"
+      }
+    ],
+    "total": 29.99
+  },
+  {
+    "order_id": "13130821",
+    "order_date": "2026-05-29",
+    "items": [
+      {
+        "title": "Speed Racer Limited Edition 4K Ultra HD SteelBook",
+        "price": 34.99,
+        "release_date": "2026-06-15",
+        "status": "Pre-order"
+      }
+    ],
+    "total": 34.99
+  },
+  {
+    "order_id": "13127270",
+    "order_date": "2026-05-28",
+    "items": [
+      {
+        "title": "The Pink Panther",
+        "price": 29.99,
+        "release_date": "2026-08-24",
         "status": "Pre-order"
       }
     ],
