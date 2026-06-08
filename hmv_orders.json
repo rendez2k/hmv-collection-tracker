@@ -603,19 +603,6 @@
     "total": 34.99
   },
   {
-    "order_id": "12986787",
-    "order_date": "2026-04-17",
-    "items": [
-      {
-        "title": "The Dark Crystal Limited Edition 4K Ultra HD Collectors Edition with SteelBook",
-        "price": 69.99,
-        "release_date": "2026-06-22",
-        "status": "Pre-order"
-      }
-    ],
-    "total": 69.99
-  },
-  {
     "order_id": "13003353",
     "order_date": "2026-04-23",
     "items": [
@@ -687,7 +674,7 @@
         "title": "Monty Python's Fliegender Zirkus Limited Edition Blu-ray SteelBook",
         "price": 29.99,
         "release_date": "2026-06-05",
-        "status": "Pre-order"
+        "status": "Delivered"
       }
     ],
     "total": 29.99
